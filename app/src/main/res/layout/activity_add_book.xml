@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/white"
+    tools:context=".AddBookActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Form"
+        android:textSize="28dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Book's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auhor"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Author's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Country's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Language's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Year's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pages"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etPages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Page's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/add_book_etSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:maxHeight="120dp"
+            android:singleLine="true"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter Summary's title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/add_book_btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:text="Submit"
+            app:backgroundTint="@null"
+            android:background="@drawable/bg_btn_submit" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/add_book_btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:text="Kembali"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            android:background="@drawable/bg_btn_back" />
+
+    </LinearLayout>
+</LinearLayout>
